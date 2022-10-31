@@ -1,0 +1,9 @@
+<h1 *ngIf="status; else elseBlock">Hey there {{myName}}!! You're doing great. Keep working hard!</h1>
+
+<h1 *ngIf="status; then trueBlock">Hey there {{myName}}!! You're doing great. Keep working hard!</h1>
+
+<ng-template #elseBlock>
+    <h1>Dont worry {{myName}} take enough time and work again, You can and you will do it!</h1>
+</ng-template>
+
+<ng-template #trueBlock>I love you more {{myName}}</ng-template>
