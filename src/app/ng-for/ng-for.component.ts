@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgForComponent implements OnInit {
 
+  public dishes = ["Boiled eggs","fried eggs","poached","omlette","Sunny side up"];
   constructor() { }
 
   ngOnInit(): void {
