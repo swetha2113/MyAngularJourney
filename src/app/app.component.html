@@ -1,7 +1,9 @@
 <h1>Badvenom welcomes you to your first Angular application!</h1>
+
+
 <app-student></app-student>
 <app-iamlearning></app-iamlearning>
-<app-test></app-test>
+<app-test (customEvent)="cdata=$event" [fromParent]= "parentMsg"></app-test>
 <app-class-binding></app-class-binding>
 <app-stylebinding></app-stylebinding>
 <app-event-binding></app-event-binding>
@@ -10,3 +12,4 @@
 <app-ng-if></app-ng-if>
 <app-ng-switch></app-ng-switch>
 <app-ng-for></app-ng-for>
+<div>{{cdata}}</div>

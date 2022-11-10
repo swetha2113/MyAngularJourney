@@ -7,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventBindingComponent implements OnInit {
 
+  public number = 0;
   public greetings = "";
   onClick(){
     this.greetings = "Welcome there!!!";
   }
+  onadd(){
+    this.number=this.number+1;
+  }
+  onsub(){
+    this.number = this.number-1;
+  }
+
+
   constructor() { }
 
   ngOnInit(): void {

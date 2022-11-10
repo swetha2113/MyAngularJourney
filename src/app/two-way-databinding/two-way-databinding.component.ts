@@ -9,6 +9,7 @@ export class TwoWayDatabindingComponent implements OnInit {
 
   public data="";
   constructor() { }
+  username="Two-way Data Binding";
 
   ngOnInit(): void {
   }

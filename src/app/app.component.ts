@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'welcome-to-angular';
+  public parentMsg = "Parent message";
+  public cdata: any;
 }
